@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Js</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+// console.log("Gaurav Saini")
+// Object in Js : collection of key value pair
+// create an object using literal way..
+let myObj = {
+    name : "Gaurav Saini",
+    age: 20,
+    isCommited: false,
+    address: {
+    city: "Saharanpur",
+    town: "Nakur",
+    vill: "Gokalpur",
+    streetNo: 25,
+    houseNo: 243
+    },
+    course: "BTech",
+    branch: "CSE",
+    sec: 15,
+    rollNo: 2503201000505,
+    adNo: "2025b010101861",
+    passingYear: 2029,
+    getInfo:function(){
+        return "My education detail is" + myObj.course + " " + myObj.passingYear;
+    },
+    subj: ["Math", "Hindi", "Science", "S.S.T"]
+};
+
+// console.log(myObj);
+// console.log(typeof(myObj));
+// console.log(myObj.course);
+// console.log(myObj["sec"]);
+// console.log(myObj.subj);
+
+// find any key in your obj
+// console.log("name" in myObj);
+// console.log(delete myObj.name);
+// console.log("name" in myObj);
+
+// find length of Obj
+let AllKeysMyObj = Object.keys(myObj);
+// console.log(AllKeysMyObj.length);
+
+
+//iterate through the obj using for loop
+for (let i = 0; i < AllKeysMyObj.length ; i++) {
+    // console.log(myObj[AllKeysMyObj[i]]);
+}
+
+// using for in loop
+for (const key in myObj) {
+    // console.log(myObj[key]);
+}
+
+//Create an Obj using new Keyword
+
+let myInfo = new Object();
+
+myInfo.name = "Gaurav Saini";
+myInfo.age = 20;
+myInfo.city = "Saharanpur";
+myInfo.mob = 7818869297;
+
+
+// access object's key using []
+// console.log(myInfo["name"]);
+
+</script>
+</script>
+
+</html>

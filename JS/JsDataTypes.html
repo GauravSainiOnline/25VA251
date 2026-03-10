@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+    <script>
+        //Js Data values Types 
+        //Premitive - Single value variable which are immutable 
+        //String, Number, Boolean, undefined, null, BigInt, symbol
+
+
+
+        //String
+        var myName = "Abhay";
+        console.log(myName);
+        console.log(typeof(myName));
+
+        //Number
+        var myPhone = 2499393493;
+        console.log(myPhone);
+        console.log(typeof(myPhone));
+
+
+        //boolean
+        var isMarried = false;
+        console.log(myName  + " is Married:  " + isMarried);
+
+        
+        //Undefined 
+        var myEmail;
+        console.log(myEmail);
+        console.log(typeof(myEmail));
+
+
+        //null
+        var myAddress = null;
+        console.log(myAddress);
+        console.log(typeof(myAddress));
+
+        //BigInt
+        var myMarks = BigInt(923599579235997345959379927297725797972792992727979995975929);
+        console.log(myMarks);
+        console.log(typeof(myMarks));
+
+        //Symbol
+        var name1 = Symbol("Abhay");
+        var name2 = Symbol("Abhay");
+        console.log(name1==name2);
+
+        // Refrence (object) typed = mutable in memory and keeps values in pair
+        //object, function, array
+
+        //Object are defined in pair of key-vlaue pair
+        
+        let myObject = {
+            name: "Gaurav Saini",
+            age: 20,
+            mob: 9439277394,
+            Section: 15,
+            Branch: "CSE", 
+        }
+
+        console.log(myObject);
+        console.log(myObject.name);
+
+
+
+        // function definition
+        function square(x) {
+            let square = x*x;
+            return square;
+        }
+
+        // function call
+        console.log(square(5));
+
+
+        //  Array is a collection of data in JS
+
+        let  students = ["Ajay", "Rohit", "Tarun", "Pinku", "Raju"];
+        console.log(students[1]);
+
+        for (let i = 0; i < students.length; i++) {
+           console.log(students[i]);
+        }
+
+    </script>
+</body>
+</html>
