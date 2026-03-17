@@ -8,23 +8,47 @@
 </head>
 
 <body>
-    
+    <!--     
     <h2>Check your age to cast the Vote!</h2>
     <form action="">
         <input type="number" placeholder="Enter your age!" name="age" id="age" />
         <input type="submit" value="submit" onclick="result()" />
-    </form>
+    </form> -->
+
+    <input type="text" placeholder="Enter your name" id="inputdata">
+    <h2 id="text"></h2>
+    <button ondblclick="changeColor()">Click ON</button>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, distinctio nihil. Alias laboriosam qui iusto
+        doloremque suscipit eius debitis eaque natus commodi labore adipisci impedit minus similique, corporis earum
+        rerum.
+    </p>
+
+
     <script>
-        function result() {
-            let myAge = document.getElementById('age').value;
-            if (myAge >= 18) {
-                alert("Eligible");
-            }
-            else {
-                alert("Not Eligible");
-            }
+        // function result() {
+        //     let myAge = document.getElementById('age').value;
+        //     if (myAge >= 18) {
+        //         alert("Eligible");
+        //     }
+        //     else {
+        //         alert("Not Eligible");
+        //     }
+        // }
+
+        function changeColor() {
+            let inputValue = document.getElementById("inputdata").value;
+
+            let inputText = document.getElementById("text");
+            inputText.innerHTML = inputValue;
+            inputText.style.color = "red";
+
         }
 
+        // let body = document.querySelector("body");
+        // const maxVal = 0xFFFFFF; // 16777215
+        // let randomNumber = Math.floor(Math.random() * maxVal);
+        // let randColor = randomNumber.toString(16).padStart(6, '0').toUpperCase();
+        // body.style.backgroundColor = `#${randColor}`;
 
     </script>
 
