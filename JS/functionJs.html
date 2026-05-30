@@ -148,7 +148,7 @@
         console.log(userResJson);
     }
 
-    userData();
+    // userData();
 
     // async await using try catch 
     async function product(detail) {
@@ -164,9 +164,96 @@
         }
     }
 
-    product();
+    // product();
 
 
+    //IIFE  immediately invoked function 
+
+    (function () {
+        // console.log("hello Mr!");
+    })();
+
+    //Short Code for above function
+    (() => {
+        // console.log("Mera Naam Gaurav Hai!");
+    })();
+
+
+    //local Storage:- 
+
+    let myInfo = {
+        name: "GAURAV SAINI",
+        course: "BTECH",
+        sec: 15,
+        age: 20,
+        gender: "male",
+        college: "ABES EC",
+    };
+
+    //convert data into JSON STRING
+    let myInfoJson = JSON.stringify(myInfo);
+
+
+    // set data in localStorage 
+    localStorage.setItem('perfrences', myInfoJson);
+
+    //retrive the data and covert into JSON object
+    //get data 
+    let retrivedMyInfo = localStorage.getItem('perfrences')
+    // console.log(retrivedMyInfo)
+
+    //covert into JSON object
+    let jsonMYinfo = JSON.parse(retrivedMyInfo);
+
+    // console.log(jsonMYinfo);
+    // document.write(jsonMYinfo.name);
+    // console.log(myInfoJson);
+
+
+    let nums = [1, 2, 3, 4, 5, 6, 7, 8, 263, 348, 347];
+
+    let sum = 0;
+
+
+    //1. JavaScript map() Method
+    // The map() method in JavaScript creates a new array by applying a callback function to each element of the original array.
+
+    // Iterates through every element of the array
+    // Executes the callback function for each element
+    // Stores the returned value in the new array
+
+
+
+    nums.map((i) => {
+        sum += i;
+    })
+    // console.log(sum);
+
+
+
+
+    // 2. JavaScript filter() Method
+    // The filter() method in JavaScript creates a new array containing only the elements that satisfy a condition defined in a callback function.
+
+    // Iterates over each element of the array
+    // Includes elements when the callback returns true
+    // Excludes elements when the callback returns false
+
+    nums.filter((i) => {
+        i += 12;
+        // console.log(i);
+    })
+
+    // 3. JavaScript reduce() Method
+    // The reduce() in JavaScript is used to combine all elements of an array into a single value by applying a callback function to each element.
+
+    // Accumulator: stores the result after each iteration
+    // currentValue: the current element being processed
+    // currentIndex: index of the current element
+
+    nums.reduce(() => {
+
+    });
 
 
 </script>
